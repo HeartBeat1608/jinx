@@ -1,0 +1,10 @@
+begin mod1
+  number a = 1
+  number b = 3
+  number c = 8
+
+  print c
+  print a b
+  print c a b
+  print a a a c c b
+end mod1
