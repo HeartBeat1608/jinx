@@ -19,9 +19,20 @@ string DeComment::removeComments(string prog)
   {
     pos = line.find_first_of("!#");
     if (pos == line.npos)
-      outstream << line;
+      outstream << line << "\n";
     else if (pos > 0)
-      outstream << line.substr(0, pos);
+    {
+      string sline = line.substr(0, pos), subline = "";
+      auto itr = sline.begin();
+      while (itr != sline.end())
+      {
+        if (*itr != ' ')
+          subline += *itr;
+        itr++;
+      }
+      if (subline.length() > 0)
+        outstream << subline << "\n";
+    }
   }
 
   return outstream.str();

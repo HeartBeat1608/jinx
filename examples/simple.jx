@@ -8,6 +8,6 @@ begin main
     print b
 
     !# Assign B to A and then print the new value of A
-    a = b
-    print a
+    !# a = b
+    print a b
 end main

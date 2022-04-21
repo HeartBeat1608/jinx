@@ -1,9 +1,0 @@
-begin
-  !# First comment
-  number a = 1
-  number b = 2
-
-  !# Second Comment
-  print a
-  print b
-end
