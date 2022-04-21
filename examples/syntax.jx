@@ -1,0 +1,9 @@
+begin <block_name>                          <- mark begining of program
+
+    !# This will be a comment
+    number a = 1                            <- Variable Declarations
+
+    a = 4                                   <- Variable ReAssignment
+
+    print a                                 <- Print variable value to system standard output stream
+end <block_name>                            <- mark end of program
